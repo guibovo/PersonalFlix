@@ -1,16 +1,3 @@
-/*var fs = require('fs');
-var http = require("http");
-var readFiles = require('readFiles');
-var express = require('express');
-
-http.createServer(function(request, response) {
-  response.writeHead(200, {"Content-Type": "text/plain"});
-  response.write("Hello World");
-  response.end();
-}).listen(8888);*/
-// server.js
-
-
 // BASE SETUP
 // =============================================================================
 

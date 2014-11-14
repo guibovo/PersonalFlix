@@ -1,14 +1,25 @@
-<HTML> 
-	<link rel="stylesheet" type="text/css" href="layout.css">
-	<HEAD>
-	</HEAD>
-	<BODY>
-		<div id="container"> 
-		<a href="file:///C:/Users/guilherme.fernandez/Documents/GitHub/PersonalFlix/videoplayer.html">
-			<img src="file:///C:/Users/guilherme.fernandez/Desktop/Videos/BigBuckBunny/Big_buck_bunny_poster_big.jpg" height="200" width="150">
-		</a>			
+<!DOCTYPE html>
+<html data-ng-app="PersonalFlixApp">
+	<link rel="stylesheet" type="text/css" href="file:///C:/Users/guilherme.fernandez/Documents/GitHub/PersonalFlix/src/public/styles/layout.css ">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+		<script type="text/javascript" src="scripts/app.js"></script>
+		<script src="scripts/videoselectioncontroller.js"></script>
+	</head>
+	<body>
+		<div data-ng-cloak="" data-ng-controller="videoselectioncontroller">
+			<div id="container">
+					<!--file:///C:/Users/guilherme.fernandez/Documents/GitHub/PersonalFlix/videoplayer.html
+						file:///C:/Users/guilherme.fernandez/Desktop/Videos/BigBuckBunny/Big_buck_bunny_poster_big.jpg-->
+					<a href="{{ movie.Movie }}">
+						<img src="{{ movie.Poster }}" height="200" width="150">
+						<br />
+						<span>{{ movie.Name }}</span>
+					</a>	
+				</div>		
+			</div>
 		</div>
-	</BODY>
-</HMTL>
+	</body>
+</html>
 
 
