@@ -23,7 +23,7 @@ router.get('/', function(req, res) {
 	res.json({ message: 'hooray! welcome to our api!' });	
 });
 
-router.get('/getMovies', function(req, res) {
+router.get('/api/getMovies', function(req, res) {
 	readFiles(function(files){
 		res.json(files);
 	});		
@@ -33,7 +33,7 @@ router.get('/getMovies', function(req, res) {
 
 // REGISTER OUR ROUTES -------------------------------
 // all of our routes will be prefixed with /api
-app.use('/api', router);
+//app.use('/api', router);
 
 // START THE SERVER
 // =============================================================================
