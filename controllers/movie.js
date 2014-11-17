@@ -7,6 +7,11 @@ module.exports = function(app) {
 		show: function(req,res) {
 			var id = req.params.id;
 			res.json(videos[id]);
+		},
+		test: function(req,res) {
+			res.render('test', {
+				hello: 'Hello world!'
+			});
 		}
 	};
 	return MovieController;
